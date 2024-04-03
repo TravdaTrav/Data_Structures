@@ -1,0 +1,16 @@
+//Bottom-up Heapify (first draft)
+
+//for loop has time complexity O(n) which makes a "heapified" heap
+
+n = numElements;
+
+//Find the index of the last parent node by finding the parent of the last leaf node
+p = numElements / 2;
+
+//Begin heapify at the last parent node because a leaf cannot sink
+for (int i = p; i >= 1; --i) {
+    sink(data, i); //data is the name of the heap array
+}
+
+
+
